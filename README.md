@@ -11,9 +11,10 @@ import (
 param := config.Get("param")
 
 
-###Create the config file if config dir( ./config ) for dev environment:
+###Create the config file in the config dir( ./config ):
 
 > ./config/dev.conf
+
 
 param:  somevalue
 
