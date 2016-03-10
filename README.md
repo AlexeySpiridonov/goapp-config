@@ -23,6 +23,10 @@ param:  somevalue
 
 
 ./yourApp   -  run in default mode (dev.conf)
+
 ./yourApp  prod  - run with prod.conf
+
+./yourApp  xyz  - run with xyz.conf
+
 
 P.S. don't use other runtime arguments :( 
