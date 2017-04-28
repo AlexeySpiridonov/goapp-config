@@ -20,9 +20,10 @@ func init() {
 	configData = make(map[string]map[string]string)
 	re = regexp.MustCompile("^\\s*([\\w-]*)\\s*:\\s*(.*)\\s*")
 	Global.Name = "global"
-	Local.Name = "dev"
 	if len(os.Args) > 1 {
 		Local.Name = os.Args[1]
+	} else {
+		panic("Please run app with environment -> ./app environment")
 	}
 }
 
